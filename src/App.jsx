@@ -1,11 +1,15 @@
 import { useState } from "react";
-
 import "./App.css";
+import Header from "./components/Header/Header";
+import TaskCards from "./components/Task/TaskCards";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return <></>;
+  return (
+    <div className="app">
+      <Header />
+      <TaskCards />
+    </div>
+  );
 }
 
 export default App;
